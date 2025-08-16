@@ -5800,3 +5800,4 @@ async def handle_adm_recent_purchases(update: Update, context: ContextTypes.DEFA
     except Exception as e:
         logger.error(f"Error in recent purchases display: {e}", exc_info=True)
         await query.edit_message_text("❌ Error displaying purchases.", parse_mode=None)
+
